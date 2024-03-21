@@ -55,7 +55,7 @@ jobs:
         REPOSITORY_SERVER_USER: ${{ secrets.REPOSITORY_SERVER_USER }}
         REPOSITORY_SERVER_PASSWORD: ${{ secrets.REPOSITORY_SERVER_PASSWORD }}
 ```
-## CD(on push to main)
+## deploy package to registry (on push to main)
 ```
 name: Maven Package
 on:
