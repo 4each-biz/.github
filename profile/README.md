@@ -16,11 +16,11 @@
 owl-dev(9.0-SNAPSHOT)
 <--- owl-utils(6.0-SNAPSHOT), owl-utils-poi(2.0-SNAPSHOT)
 <--- owl-utils-dba(2.0-SNAPSHOT)
-<--- kangaroo(6.0-SNAPSHOT)
+<--- kangaroo(6.1-SNAPSHOT)
 ```
 ## Web Application
 ```
-kangaroo(6.0-SNAPSHOT)
+kangaroo(6.1-SNAPSHOT)
 <-- app(1.0-SNAPSHOT)
 ```
 
