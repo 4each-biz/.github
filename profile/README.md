@@ -39,7 +39,6 @@ kangaroo(6.1-SNAPSHOT)
 	<packaging>war</packaging>
 	<name>app</name>
 	<url>https://github.com/4each-biz/app</url>
-
 	<repositories>
 		<repository>
 			<id>github</id>
@@ -51,13 +50,10 @@ kangaroo(6.1-SNAPSHOT)
 			</snapshots>
 		</repository>
 	</repositories>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<dependencies>
-
 		<dependency>
 			<groupId>biz.xpenguin.kangaroo</groupId>
 			<artifactId>kangaroo</artifactId>
@@ -65,7 +61,6 @@ kangaroo(6.1-SNAPSHOT)
 			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
-
 	</dependencies>
 </project>
 ```
