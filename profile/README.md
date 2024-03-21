@@ -23,6 +23,52 @@ owl-dev(9.0-SNAPSHOT)
 kangaroo(6.1-SNAPSHOT)
 <-- app(1.0-SNAPSHOT)
 ```
+```
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>biz.xpenguin.owl</groupId>
+		<artifactId>owl-dev</artifactId>
+		<version>9.0-SNAPSHOT</version>
+	</parent>
+	<groupId>jp.tokyo.foreach</groupId>
+	<artifactId>app</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>app</name>
+	<url>https://github.com/4each-biz/app</url>
+
+	<repositories>
+		<repository>
+			<id>github</id>
+			<name>GitHub Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/4each-biz/registry</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>biz.xpenguin.kangaroo</groupId>
+			<artifactId>kangaroo</artifactId>
+			<version>6.1-SNAPSHOT</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+</project>
+```
 
 # Workflow(Actions)
 ## CI(on pull_request)
