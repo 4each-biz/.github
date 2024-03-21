@@ -24,7 +24,7 @@ kangaroo(6.1-SNAPSHOT)
 <-- app(1.0-SNAPSHOT)
 ```
 
-# CI/CD Workflow
+# Workflow(Actions)
 ## CI(on pull_request)
 ```
 name: Java CI with Maven
