@@ -18,16 +18,19 @@ owl-dev(9.0-SNAPSHOT)
 <--- owl-utils-dba(2.0-SNAPSHOT)
 <--- kangaroo(6.0-SNAPSHOT)
 ```
+## Web Application
+```
+kangaroo(6.0-SNAPSHOT)
+<-- app(1.0-SNAPSHOT)
+```
 
 # CI/CD Workflow
 ## CI(on pull_request)
 ```
 name: Java CI with Maven
-
 on:
   pull_request:
     branches: [ "main" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -55,11 +58,9 @@ jobs:
 ## CD(on push to main)
 ```
 name: Maven Package
-
 on:
   push:
     branches: [ "main" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -77,7 +78,6 @@ jobs:
         server-username: REPOSITORY_SERVER_USER
         server-password: REPOSITORY_SERVER_PASSWORD
         settings-path: ${{ github.workspace }} # location for the settings.xml file
-
     - name: Build with Maven
       run: mvn -B deploy --file pom.xml -s $GITHUB_WORKSPACE/settings.xml
       env:
@@ -89,5 +89,5 @@ jobs:
 ```
 Settings > Secrets and variables > Actions
 REPOSITORY_SERVER_USER : maven202312
-REPOSITORY_SERVER_PASSWORD : ask
+REPOSITORY_SERVER_PASSWORD : ask ytx
 ```
