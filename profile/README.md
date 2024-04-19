@@ -23,6 +23,19 @@ owl-dev(9.0-SNAPSHOT)
 kangaroo(6.1-SNAPSHOT)
 <-- app(1.0-SNAPSHOT)
 ```
+### Development Setup
+put settings.xml as follow to your .m2 directory.
+```
+<settings>
+    <servers>
+        <server>
+            <id>github</id>
+            <username>user_name</username>
+            <password>ghp_token</password>
+        </server>
+    </servers>
+</settings>
+```
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
